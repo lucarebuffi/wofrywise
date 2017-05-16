@@ -17,7 +17,7 @@ class WiseWavefront(WavefrontDecorator):
 
 
     def toGenericWavefront(self):
-        return GenericWavefront1D.initialize_wavefront_from_arrays(x_array=self._positions_s, y_array=self._electric_fields, wavelength=self._wavelength)
+        return GenericWavefront1D.initialize_wavefront_from_arrays(x_array=self._positions, y_array=self._electric_fields, wavelength=self._wavelength)
 
     @classmethod
     def fromGenericWavefront(cls, wavefront):
